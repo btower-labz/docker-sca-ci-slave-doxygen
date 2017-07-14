@@ -17,6 +17,6 @@ RUN cat /etc/issue
 RUN apt-get update && apt-get install -y doxygen
 
 USER jenkins
-RUN php --version
+# RUN php --version
 
 ENTRYPOINT ["jenkins-slave"]
